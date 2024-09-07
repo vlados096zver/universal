@@ -1,0 +1,93 @@
+@import 'responsive.scss';
+
+.services {
+	padding-top: 100px;
+	margin-bottom: 148px;	
+	@include media(md) {
+		padding-top: 70px;
+		margin-bottom: 100px;
+	}
+	@include media(sm) {
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+	&__wrap {
+		display: flex;	
+		flex-direction: column;
+		gap: 50px 0;
+		@include media(md) {
+			gap: 40px 0;
+		}
+		@include media(sm) {
+			gap: 30px 0;
+		}
+	}
+	&__item {
+		background-color: #F8F8F8;
+		border-radius: 40px;
+		padding: 50px;
+		@include media(md) {
+			padding: 40px 20px;
+			border-radius: 30px;
+		}
+		@include media(sm) {
+			border-radius: 20px;
+		}
+	}
+	&__subtitle {
+		font-size: 36px;
+		color: #131313;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+		font-weight: 900;
+		@include media(md) {
+			font-size: 30px;	
+		}
+		@include media(sm) {
+		 	font-size: 24px;
+		 	letter-spacing: 2px;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 40px;	
+		@include media(md) {
+			margin-bottom: 30px;	
+		}
+	}
+	&__image {
+		width: 300px;
+		@include media(md) {
+			width: 100%;	
+			margin-bottom: 20px;	
+		}
+		img {
+			display: block;	
+			max-width: 100%;
+			border-radius: 15px;
+		}
+	}
+	&__content {
+		width: calc(100% - 300px);
+		padding-left: 50px;
+		@include media(md) {
+			width: 100%;	
+			padding-left: 0;	
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.8;
+		}
+	}
+	&__inner {
+		display: flex;	
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px;
+		@include media(sm) {
+			gap: 20px;
+		}
+	}
+}

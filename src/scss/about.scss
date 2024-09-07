@@ -1,0 +1,21 @@
+@import 'responsive';
+
+.about {
+	background-color: #F8F8F8;
+	padding: 100px 0;
+	&+.about {
+		padding-top: 0;
+	}
+	p {
+		font-size: 16px;	
+		line-height: 1.8;
+		letter-spacing: 2px;
+		color: #3D4048;
+		@include media(sm) {
+			font-size: 14px;	
+		}
+		&:not(:last-child) {
+			padding-bottom: 1.5em;
+		}
+	}
+}

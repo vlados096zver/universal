@@ -1,0 +1,68 @@
+@import 'responsive';
+
+.text {
+	padding-bottom: 72px;	
+	@include media(sm) {
+		padding-bottom: 50px;	
+	}
+	&.bg {
+		background-color: #F8F8F8;
+	}
+	&+.text {
+		padding-top: 92px;	
+		@include media(mdx) {
+			padding-top: 72px;	
+		}
+		@include media(sm) {
+			padding-top: 50px;	
+		}
+	}
+	p {
+		font-size: 20px;	
+		line-height: 1.5;
+		letter-spacing: 2px;
+		color: #3D4048;
+		@include media(sm) {
+			font-size: 16px;	
+		}
+		&:not(:last-child) {
+			padding-bottom: 1.5em;
+		}
+	}
+	h3 {
+		font-size: 30px;	
+		color: #131313;
+		text-transform: uppercase;
+		letter-spacing: 3px;	
+		padding-bottom: 46px;	
+		font-weight: 900;	
+		@include media(sm) {
+			font-size: 24px;	
+		}
+	}
+	ul {
+		li {
+			position: relative;
+			display: block;	
+			font-size: 24px;	
+			line-height: 1.25;	
+			padding-left: 25px;	
+			@include media(sm) {
+				font-size: 20px;	
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				top: 12px;
+				left: 0;
+				width: 8px;	
+				height: 8px;	
+				background-color: #97A7BB;
+				border-radius: 50%;
+			}
+			&:not(:last-child) {
+				padding-bottom: 1.5em;
+			}
+		}
+	}
+}

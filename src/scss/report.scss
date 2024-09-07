@@ -1,0 +1,22 @@
+@import 'responsive.scss';
+
+.report {
+	margin-top: 105px;	
+	margin-bottom: 132px;	
+	@include media(mdx) {
+		margin: 50px 0;
+	}
+	@include media(sm) {
+		margin: 50px 0;
+	}
+	&__row {
+		display: flex;	
+		flex-direction: column;
+		gap: 70px 0;
+	}
+	&__col {
+		background-color: #F8F8F8;
+		padding: 75px 0;
+		border-radius: 30px;
+	}
+}
